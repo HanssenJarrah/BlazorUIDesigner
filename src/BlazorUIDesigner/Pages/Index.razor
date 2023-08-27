@@ -1,10 +1,15 @@
 ﻿@page "/"
 
-@((MarkupString)buttonMarkup)
+<div class="ui-designer-app">
+    <EditorPanel/>
+    <LayoutEditor/>
+    <ItemEditorPanel/>
+</div>
 
-<dx-text-box/>
-
-@code
-{
-    string buttonMarkup = """<dx-button text="Custom Element Button"/>""";
-}
+<style>
+    .ui-designer-app {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+</style>

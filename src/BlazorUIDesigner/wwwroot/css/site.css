@@ -1,5 +1,14 @@
+:root {
+    --bg-primary: #fcfcfd;
+    --bg-secondary: #f7f7fd;
+}
+
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html, body, main {
+    height: 100%;
 }
 
 h1:focus {
