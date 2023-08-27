@@ -1,16 +1,12 @@
 using BlazorUIDesigner.Configuration;
-using DevExpress.Blazor;
-using Microsoft.AspNetCore.Components.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
-Configuration.ConfigureDevExpress(builder.Services);
-
 builder.Services.AddRazorPages();
-builder.Services.AddServerSideBlazor(c =>
-{
-    c.RootComponents.RegisterCustomElement<DxButton>("dx-button");
-});
+builder.Services.AddServerSideBlazor()
+    .ConfigureCustomElements();
+
+builder.Services.ConfigureDevExpress();
 
 var app = builder.Build();
 

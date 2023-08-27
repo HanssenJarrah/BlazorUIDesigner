@@ -2,9 +2,9 @@
 
 namespace BlazorUIDesigner.Configuration;
 
-public static partial class Configuration
+public static partial class ConfigurationExtensions
 {
-    public static void ConfigureDevExpress(IServiceCollection services)
+    public static void ConfigureDevExpress(this IServiceCollection services)
     {
         services.AddDevExpressBlazor(config =>
         {
