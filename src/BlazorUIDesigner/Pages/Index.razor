@@ -1,3 +1,8 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+@((MarkupString)buttonMarkup)
+
+@code
+{
+    string buttonMarkup = """<dx-button text="Custom Element Button"/>""";
+}

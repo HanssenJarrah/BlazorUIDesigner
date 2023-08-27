@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="DevExpress.Blazor" Version="23.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.CustomElements" Version="7.0.10" />
   </ItemGroup>
 
 </Project>
