@@ -1,6 +1,15 @@
 ﻿<div class="layout-editor">
     <div class="resizeable-panel">
-        <p>Temporary contents of the panel to show how resizing works. This text should overflow.</p>
+        <div class="example-panel-container">
+            <div class="example-panel"></div>
+            <div class="example-panel"></div>
+            <div class="example-panel"></div>
+            <div class="example-panel"></div>
+            <div class="example-panel"></div>
+            <div class="example-panel"></div>
+            <div class="example-panel"></div>
+            <div class="example-panel"></div>
+        </div>
     </div>
 </div>
 
@@ -21,5 +30,20 @@
         border: 2px solid black;
         width: 90%;
         height: 80%;
+
+        padding: 8px;
+    }
+
+    .example-panel-container {
+        display: grid;
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 8px;
+        justify-items: stretch;
+        height: 100%;
+    }
+
+    .example-panel {
+        border: 3px dashed darkorange;
     }
 </style>
